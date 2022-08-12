@@ -4,14 +4,13 @@ import random
 class QuizLogic:
     def __init__(self, q_list):
         self.question_number = 0
-        self.score = 0
         self.question_list = q_list
         self.current_question = None
         self.used_question = []
         self.question_counter = 0
 
     def still_has_questions(self):
-        return self.question_number < len(self.question_list)
+        return self.question_number < len(self.question_list)+1
 
     def count(self):
         self.question_counter += 1

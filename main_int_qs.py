@@ -16,3 +16,4 @@ for question in question_data:
 
 quiz = QuizLogic(question_bank)
 quiz_ui = QuizInterface(quiz)
+
