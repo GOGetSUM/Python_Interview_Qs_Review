@@ -210,7 +210,116 @@ questions = { "What is good Code?": "Good code can be define by two factors, \n\
                                                     "2) children are usually letters\n"
                                                     "Some examples are auto completion, ip routing, search engines.\n"
                                                     "They have a Big O of O(length of word).",
+              "What are graphs so great at doing in respect to data structure graphs?":"Graphs are great for real world relationships,\n\t"
+                                                                                       "i.e. they are a great representation of the internet, family trees, roads & maps,\n\t"
+                                                                                       "facebook uses graphs for friend recommendations.",
+              "Are linked list & trees a type of graph?":"Yes, trees are built upon the functionality of a link list and trees themselves are a graph.",
+              "What are the two type of graphs in respect to edge direction?":"The two type of graphs are:\n\t"
+                                                 "Directed and Undirected.",
+              "What are directed graphs?":" Directed graphs are non bi-directional, the edge connecting each node only goes 1-way.",
+              "What are undirected graphs?":"Undirected graphs are two-way, the edge can go back and forth \n\t"
+                                            "for example highways.",
+              "What are the two types of graphs in respect to values and edges?":"The two type of graphs are weighted and unweighted graphs\n\t"
+                                                                                 "weighted values can be applied to the edges,\n\t"
+                                                                                 "google maps uses this to optimize shortest paths.\n\t"
+                                                                                 "unweighted no value other that at the nodes",
+              "What is the difference between cylic and acylic graphs?":"Cylic graphs are nodes connected end to beginning to end.\n\n"
+                                                                        "Acylic are not connected in a circle.",
+              "What are the Pros & Cons of Graphs as a data structure?":"The pros of gaphs are they depict relationships very well.\n\n"
+                                                                        "The cons are scaling is hard.",
+              "What are the essential two parts of any program?":"Any program is created by data structures and algorithms.\n\t"
+                                                                 "Data Structures + Algorithms = Programs\n\t"
+                                                                 "class {} + function() = Programs",
+              "What does algorithms allow us to do when we have a Big O time complexity of O(n^2)?":"An algorithm when chosen and implemented correctly \n"
+                                                                                                    "may allow us to bring a O(n^2) down to a much more efficient Big O of \n"
+                                                                                                    "O(n).",
+              "On the command line syntax how can you run recursion if needed?":"On command prompt 'ls -R' the R is recursiong \n"
+                                                                                "and it will bring back also the files inside subfolders\n\t"
+                                                                                "'ls' is just a list.",
+              "What is Recursion?":"Recursion is a function the refers to itself inside of the function.\n\t"
+                                   "Defined as the repeated application of a recursive procedure or definition.",
+              "When should we choose the recursion algorithm?":"Recursion is good for repeated sub task to do.\n\t"
+                                                               "i.e. concept is used in searching and lookup. 'traverse' function in our tree exercise.",
+              "What happens in recursion if there is no pop or return in the function?":"Recursion is just a stacking function 'stacks on top of each other' & if there is no\n"
+                                                                                        "pop or return it will stack until, stackoverflow.\n\t"
+                                                                                        "This is one of the biggest issues in recursion.",
+              "What does every recursion function need to have?":"Every recursion function needs to have a base case.",
+              "How many paths does a recursion function have and what are they?":"Every recursion function has two paths:\n\t"
+                                                                                 "1) run the recursion\n\t"
+                                                                                 "2) base case to stop the recursion, stop running the function",
+              "What should you remember about returning values in a recursion function?":"In a recursion function, once base case is hit it will start popping\n"
+                                                                                         "the memory, if return value is only done on the final recursion \n"
+                                                                                         "then that value will be popped. \n"
+                                                                                         "A return (recursion function) call is needed to retain return value\n"
+                                                                                         "and bubble it up to the initial recursion function call.",
+              "What are the rules to follow in a recursion function?":"Rules for a recursion function:\n\t"
+                                                                      "1) Identify the base case\n\t"
+                                                                      "2) Identify the recursive case\n\t"
+                                                                      "3) Get closer and closer to the base case, return when needed\n\t\t"
+                                                                      "Usually two returns are used.",
+              "When looking at the fibonacci exercise what are the time complexity of iterative vs recursion.":"Iterative has a time complexity of O(n),\n"
+                                                                                                               "Recursion has an exponential time complexity of O(2^n) \n\t"
+                                                                                                               "Big O of O(2^n)- for every element added we get a operation increase exponentially.\n\t"
+                                                                                                               "Recursion is not ideal it is slow.",
+              "Is this statement true or false?":"Anything you do in recursion you can do iteratibly.",
+              "What are the Recursion pros and cons?":"Pros of recursion are:\n\t"
+                                                      "DRY & readability\n"
+                                                      "Cons of recursion are:\n\t"
+                                                      "Large stack, might get stack overflow, may be confusing to new coders.",
+              "What is a rule of thumb for using recursion?":"Rule of thumb:\n\t"
+                                                             "If you do not know how deep your data is don't use recursion.",
+              "What are some good times to use recursion?":" Recursion can be a welcome addition when dealing with \n"
+                                                           "Breadth-First Search & Depth-First Search, also in sorting it may be helpful.",
+              "Whats a new-rule to remember about using recursion and trees?":"Every time you are using a tree or converting something into a tree, \n"
+                                                                                        "consider recursion.\n\t"
+                                                                              "For example:\n\t"
+                                                                              "1) Divided into a number of sub-problem that are smaller instances of the same problem.\n\t"
+                                                                              "2) Each instance of the sub-problem is identical in nature.\n\t"
+                                                                              "3) The solutions of each sub-problem can be combined to solve the problem at hand",
+              "Can recursion be used for divide and conquer?":"Yes, recursion can be use for divide and conquer.",
+              "What are the most common applications for recursion?":"Recursion is used in:\n\t"
+                                                                     "1) Merge Sort\n\t"
+                                                                     "2) Quick Sort \n\t"
+                                                                     "3) Tree Traversal \n\t"
+                                                                     "4) Graph Traversal.",
+              "Sorting is really common in interviews, whats all the fuss with sorting?":"When input gets larger and large i.e\n"
+                                                                                         "Google has alot of sites that are index and they sort on data,\n"
+                                                                                         "or amazon products (millions of products) and they need sorting.\n"
+                                                                                         "Companies usually need custom sorting programs to save money. Random data \n"
+                                                                                         "thats not sorted is hard to access.",
+              "What are some common sorting algorithms?":"Some common sorting algorithms are:\n"
+                                                         "\t1) Bubble Sort"
+                                                         "\t2) Insertion Sort\t"
+                                                         "3) Selection Sort\t"
+                                                         "4) Merge Sort\t"
+                                                         "5) Quick Sort",
+              "What should you be carful of when using sorting algorithms?":"Based on language and other aspects,\n"
+                                                                            "It may not sort the way you intended it too,\n"
+                                                                            "at time more logic is needed to adjust the sorting features.",
+              "Define bubble sort and its time complexity.":"Bubble Sort(): we bubble up the highest number between two data points at a time from start to finish.\n"
+                                                            "it uses looping - bubble sort is one of the least efficient O(n^2) - Horrible ",
+              "Define selection sort and its time complexity.":"Selection Sort(): selection sort traverse the data 1 by 1 with a base data point\n"
+                                                               "and compares it, if smaller point is found then it becomes your new base and at the end of traverse the smallest is set at top.\n\t"
+                                                               "Big O time complexity O(n^2)- Horrible ",
+              "When is a good time to use insertion sort and its possible time complexity":"Insertion Sort(): is very good when data is almost sorted or nearly sorted.\n"
+                                                                                           "In best case scenario we could possibly get O(n), performs well with small data points.",
+              "How is Merge sort usually used for and is it a stable algorithm?":"Merge Sort(): uses divide and conquer (recursion), It divides into 2 until only single data points are\n"
+                                                                                 "held then compares and merges. Merge sort is a stable algorithm.",
+              "What is a stable algorithm?":"Stable algorithms are as follows:\n\t"
+                                            "1) A sorting algorithm is said to be stable if two objects with equal keys appear in the same order in sorted output\n"
+                                            "as they appear in the input array to be sorted.\n\t"
+                                            "2) A 'stable' sorting algorithm keeps the items with the same sorting key in order.\n\t"
+                                            "\ti.e. list of five words being sorted by the first letter.\n\t "
+                                            "3) Some algorithms are stable by nature\n\t"
+                                            "i.e. Heap and Quick sort.",
+              "What is an unstable algorithm?":"In an unstable sort algorithms, data points can be interchange while in stable they stay\n"
+                                               "in the same relative positions.",
               ""
+
+
+
+
+
 
 
 
