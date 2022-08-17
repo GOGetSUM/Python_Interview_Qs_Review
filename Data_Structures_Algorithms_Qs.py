@@ -314,7 +314,24 @@ questions = { "What is good Code?": "Good code can be define by two factors, \n\
                                             "i.e. Heap and Quick sort.",
               "What is an unstable algorithm?":"In an unstable sort algorithms, data points can be interchange while in stable they stay\n"
                                                "in the same relative positions.",
-              ""
+              "When should bubble sort be used?":"Bubble Sort should be used mainly just for educational purposes it is inefficient.",
+              "When should insertion sort be used?":"Insertion Sort should be use when there are few data points. If the data is immense then it won't be an efficient solution.",
+              "When should Selection sort be used?":"Selection sort similar to bubble sort only for educational purposes.",
+              "When should Merge sort be used?":"Merge sort is good because it uses the basis of divide and conquer. It holds a time complexity of big O(n log n)\n"
+                                                "Use merge sort when you are worried of worst case scenarios,\n"
+                                                "in terms of space complexity it is not the most efficient with a space complexity of O(n) but\n"
+                                                "if external memory is used then we should not worry about space complexity as much.",
+              "When should Quick sort be used?":"Quick sort is better than merge sort, the only downside is the possible time complexity.Hence, if worried of worst case\n"
+                                                "use Merge sort, since if you pick a bad pivot then you will be running a longer time.",
+              "When should Heap sort be used?":"On average heap sort is slower than quick sort. If you are really worried about worst case in both time and space complexity\n"
+                                               "then you might choose to use it. More often than not you will choose merge or quick sort instead.",
+              "What is the exception to being more efficient than O(n log n) in sort?":"Mathematically in sort it might be impossible with the exception of non-comparison.",
+              "What type of sorting algorithm are used in the built-in function of python?":"The Python sorted() uses the Timsort algorithm which is a hybrid sorting algorithm\n"
+                                                                                            "derived from merge sort and insertion sort. best case time complexity is O(n)",
+              "":""
+
+
+
 
 
 
